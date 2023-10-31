@@ -1,11 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-}
-
-body {
-  background: url(img/Background.svg);
-  background-size: cover;
+  box-sizing: border-box;
 }
 
 .section {
@@ -15,29 +11,30 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1170px;
 }
 
 .header {
-  padding-top: 25px;
+  padding: 25px 0;
+  border-bottom: 1px solid #ffffff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
 }
 
 .header .container {
+  max-width: 1440px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-}
-
-.header_left {
-  padding-left: 30px;
 }
 
 .header_nav {
   display: flex;
+  align-items: center;
   gap: 40px;
-}
-
-.header_nav:not(:first-child) {
-  padding-left: 131px;
 }
 
 .header_nav a {
@@ -47,49 +44,66 @@ body {
   font-size: 16px;
 }
 
-.header_right {
-  display: flex;
-  align-items: center;
-  padding-left: 125px;
-  padding-right: 25px;
-}
-
 .header_btn {
   display: flex;
-  gap: ;
+  align-items: center;
 }
 
 .btn_left {
   font-size: 16px;
   border-radius: 10px;
-  padding: 4px 5px;
-  border: 0.5px;
-  gap: 5px;
   background: none;
   color: #ffffff;
+  padding: 10px;
+  border: 1px solid;
 }
 
+.btn_right {
+  margin-left: 16px;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+.main {
+  background: url(img/Background.svg) center/cover;
+  height: 100dvh;
+  padding-top: 91px;
+}
+
+.main .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main_logo_1 {
+  position: absolute;
+  bottom: 0;
+  right: 430px;
+}
+
+.main_logo_2 {
+  position: absolute;
+  bottom: 0;
+  right: 58px;
+}
 
 .main h1 {
-  padding-top: 68px;
-  padding-left: 147px;
   color: #ffffff;
   font-size: 60px;
 }
 
 .main h4 {
-  padding-top: 39px;
-  padding-left: 147px;
+  margin-top: 39px;
   font-size: 22px;
   color: #ffffff;
 }
 
-.main_btn {
-  padding-top: 88px;
-  padding-left: 147px;
-}
-
 .main button {
+  margin-top: 88px;
   font-size: 17px;
   color: black;
   padding: 17px 25px;
