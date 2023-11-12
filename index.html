@@ -3,43 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <title>PLATFORMA.WEIN</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>PLATFORMA.WINE</title>
   </head>
   <body>
     <header class="header section">
-      <div class="container">
+      <div class="container header__container">
         <img src="img/PLATFORMA.WINE.svg" alt="" />
-        <div class="header_nav">
-          <a href="">Экспертиза</a>
-          <a href="">Доп услуги</a>
-          <a href="">Новости</a>
-          <a href="">Клиенты</a>
-          <a href="">Реклама</a>
-          <a href="">Контакты</a>
+        <div class="header__nav">
+          <a class="header__nav-link"  href="">Экспертиза</a>
+          <a class="header__nav-link"  href="">Доп услуги</a>
+          <a class="header__nav-link"  href="">Новости</a>
+          <a class="header__nav-link"  href="">Клиенты</a>
+          <a class="header__nav-link"  href="">Реклама</a>
+          <a class="header__nav-link"  href="">Контакты</a>
         </div>
-        <div class="header_btn">
-          <button class="btn_left">ВОЙТИ</button>
-          <button class="btn_right">РЕГИСТРАЦИЯ</button>
+        <div class="header__buttons">
+          <button class="header__button header__button_login">ВОЙТИ</button>
+          <button class="header__button header__button_register">РЕГИСТРАЦИЯ</button>
         </div>
       </div>
     </header>
     <main class="main section">
-      <div class="container">
-        <img class="main_logo_1"  src="img/wine1.png" alt="wine1">
-        <img class="main_logo_2"  src="img/wine2.png" alt="wine2">
-        <h1>
+      <div class="container main__container">
+        <img class="main__logos main__logo-small" src="img/wine1.png" alt="wine1" />
+        <img class="main__logos main__logo-big" src="img/wine2.png" alt="wine2" />
+        <h1 class="main__title">
           ЕДИНАЯ ТОРГОВАЯ <br />
           ПЛАТФОРМА ВИННОЙ <br />
           ПРОДУКЦИИ
         </h1>
-        <h4>
+        <p class="main__description">
           Продавайте или закупайте проверенную <br />
           винную продукцию с рейтингом и гарантиями от PLATFORMA.WINE
-        </h4>
-        <button>ПРИСОЕДИНИТЬСЯ</button>
+        </p>
+        <button class="main__button">ПРИСОЕДИНИТЬСЯ</button>
       </div>
-      </main>
-
+    </main>
+    <div class="content section">
+      <div class="container content__container">
+        <h1 class="content__title">PLATFORMA объединяет</h1>
+        <div class="content__features">
+          <div class="content__features-icons">
+            <img src="img/icon1.svg" alt="icon1" />
+            <h3 class="content__features-text content__features-text_first">Продавцов</h3>
+            <p class="content__pg" >Выставляют свои <br> товары на торги</p>
+          </div>
+          <div class="content__features-icons">
+            <img src="img/icon2.svg" alt="icon2	" />
+            <h3 class="content__features-text content__features-text_second">Дистрибьюторов</h3>
+            <p class="content__pg" >Создают торги на продажу и покупку <br>
+              и обеспечивать логистику другим участникам</p>
+          </div>
+          <div class="content__features-icons">
+            <img src="img/icon3.svg" alt="icon3" />
+            <h3 class="content__features-text content__features-text_third">Покупателей</h3>
+            <p class="content__pg" >Создают торги <br> на закупку</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
-</html>
+</html> 
