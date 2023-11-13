@@ -122,23 +122,16 @@ input {
   position: relative;
 }
 
-.main__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.main__logos {
+.main__wine {
   position: absolute;
   bottom: 0;
 }
 
-.main__logo-small {
+.main__wine_small {
   right: 460px;
 }
 
-.main__logo-big {
+.main__wine_big {
   right: 58px;
 }
 
@@ -156,6 +149,8 @@ input {
 }
 
 .main__button {
+  display: flex;
+  align-items: center;
   margin-top: 88px;
   font-size: 17px;
   font-weight: bold;
@@ -173,51 +168,45 @@ input {
   border: 1px solid #ffffff;
 }
 
-.content {
+.platforma-merge {
   padding-top: 114px;
 }
 
-.content__title {
+.platforma-merge__title {
   display: flex;
   justify-content: center;
   font-size: 42px;
   font-weight: bold;
 }
 
-.content__features {
-  padding-top: 177px;
+.platforma-merge__features {
+  margin-top: 177px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.content__features-icons {
+.platforma-merge__feature {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
+.platforma-merge__feature-icon {
+  display: flex;
+  align-items: flex-end;
+  height: 90px;
+}
 
-.content__features-text {
+.platforma-merge__feature-title {
+  margin-top: 20px;
   font-size: 28px;
   font-weight: bold;
 }
 
-.content__features-text_first {
-  padding-top: 30px;
-}
-
-.content__features-text_second {
-  padding-top: 35px;
-}
-
-.content__features-text_third {
-  padding-top: 20px;
-}
-
-.content__pg {
-  padding-top: 19px;
+.platforma-merge__feature-description {
+  margin-top: 19px;
   font-size: 18px;
   font-weight: normal;
   color: #757575;
